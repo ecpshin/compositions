@@ -48,10 +48,9 @@ public class Client {
 	public String toString() {
 		
 		StringBuilder sb = new StringBuilder();
-		sb.append(name + "\n");
-		sb.append(email + "\n");
-		sb.append(SDF.format(birthDate));
-		sb.append("\n");
+		sb.append(name + " ");
+		sb.append("(" + SDF.format(birthDate) + ")");
+		sb.append(" - " + email + "\n");
 		
 		return sb.toString();
 	}
